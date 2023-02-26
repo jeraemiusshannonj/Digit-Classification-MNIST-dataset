@@ -1,0 +1,6 @@
+test_loss,test_acc=model.evaluate(x_test,y_test)
+print("Test Loss: {}, Test Accuracy: {}".format(test_loss,test_acc))
+y_pred=model.predict(x_test)
+y_pred_classes=np.argmax(y_pred,axis=1)
+print(y_pred)
+print(y_pred_classes)
